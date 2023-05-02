@@ -1,21 +1,8 @@
+<app-nav-bar></app-nav-bar>
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <h1>Hi {{username}}!</h1>
-            <hr>
-            <img [src]="image" alt="" style="height:300px; width:450px" class="center">
-            <app-new-component *ngIf="notify()"></app-new-component>
-            <label [ngClass]="{change:username==''}">Enter Your Name :</label>
-            <input [(ngModel)]="username" type="text" class="form-control">
-            <button class="btn btn-light" (click)="notify()" (click)="add()" [ngStyle]="{color:username==''?'Red':'Green'}">Register</button>
-            <br>
-            <label>List of Users</label>
-            <ul>
-                <li *ngFor="let user of Users">
-                    {{user}}
-                </li>
-            </ul>
-            <app-products></app-products>
+            <app-login></app-login>
         </div>
     </div>
 </div> 

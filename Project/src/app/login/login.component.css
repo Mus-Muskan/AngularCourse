@@ -1,0 +1,19 @@
+.container{
+    margin-top: 30px;
+}
+.center{
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+label{
+    color: blue;
+}
+button{
+    margin-top: 10px;
+    border: 10px;
+}
+.change{
+    color: red;
+}

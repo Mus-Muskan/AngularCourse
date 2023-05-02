@@ -1,0 +1,7 @@
+<h1>Hi {{username}}!</h1>
+<hr>
+<img [src]="image" alt="" style="height:300px; width:450px" class="center">
+<app-pop-up *ngIf="notify()"></app-pop-up>
+<label [ngClass]="{change:username==''}">Enter Your Name :</label>
+<input [(ngModel)]="username" type="text" class="form-control">
+<button class="btn btn-light" (click)="notify()" (click)="add()" [ngStyle]="{color:username==''?'Red':'Green'}">Register</button>
