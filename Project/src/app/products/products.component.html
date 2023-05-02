@@ -1,0 +1,30 @@
+<form #frm="ngForm" (ngSubmit)="updateItem(frm)">
+  <div class="">
+    <label>Please Enter the New Item:</label>
+    <input [(ngModel)]="item" type="text" class="form-control" name="newitem">
+    <button name="button" class="btn btn-primary" type = "submit">Add Item</button>
+  </div>
+</form>
+
+<div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        <button class="form-control" style="color:lightseagreen" (click)="getMenProducts()">Men</button>
+        <ul class="list-group">
+            <li *ngFor="let i of Men" class="list-group-item">{{i}}</li>
+      </ul>
+      </div>
+      <div class="col">
+        <button class="form-control" style="color:lightcoral" (click)="getWomenProducts()">Women</button>
+        <ul class="list-group">
+            <li *ngFor="let i of Women" class="list-group-item">{{i}}</li>
+        </ul>
+      </div>
+      <div class="col">
+        <button class="form-control" style="color:lightsalmon" (click)="getKidsProducts()">Kids</button>
+        <ul class="list-group">
+            <li *ngFor="let i of Kids" class="list-group-item">{{i}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
