@@ -1,0 +1,22 @@
+div{
+    /* display:block; */
+    margin-top: 10px;
+}
+img{
+    margin-top: 10px;
+}
+
+#Ccard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+    flex-wrap: wrap;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}

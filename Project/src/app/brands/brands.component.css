@@ -1,0 +1,15 @@
+img{
+    height: 100px;
+    width: 150px;
+}
+#brand{
+    margin-top: 10px;
+    display: flex;
+    /* padding-left: 30px; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#first{
+    padding-left: 30px;
+}
