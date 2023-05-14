@@ -1,0 +1,12 @@
+#contact{
+   color: green;
+   text-align: center;
+}
+#heading{
+    align-self: center;
+    margin: 10px;
+    color:black
+}
+#contact{
+    background-image: "Banner 2.jpg";
+}
