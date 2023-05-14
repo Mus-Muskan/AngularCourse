@@ -14,6 +14,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { BrandsComponent } from './brands/brands.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AppRoutingModule } from './app-routing.module';
     CarouselComponent,
     BrandsComponent,
     FooterComponent,
+    ContactusComponent,
   ],
   
   imports: [
