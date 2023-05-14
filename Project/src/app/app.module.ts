@@ -14,10 +14,6 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { BrandsComponent } from './brands/brands.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
-<<<<<<< HEAD
-=======
-import { ConnectService } from './connect.service';
->>>>>>> 3194f3e2c2276b1c3cde61f5715280d28ef27b37
 import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
@@ -41,7 +37,7 @@ import { ContactusComponent } from './contactus/contactus.component';
     RouterModule,
     AppRoutingModule,
   ],
-  providers: [ConnectService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
