@@ -3,11 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ContactService } from './contact.service';
 
 const routes:Routes=[
   {path:'login' , component:LoginComponent},
   {path:'home' , component:HomeComponent},
-  {path:'contact-us', component:ContactusComponent}
+  {path:'contact-us' , component:ContactusComponent , canActivate:[ContactService]},
+  {path:'' , redirectTo:'/login' , pathMatch:'full'},
+  {path:'**' , component:PageNotFoundComponent}
+
 ];
 
 

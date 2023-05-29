@@ -15,6 +15,10 @@ import { BrandsComponent } from './brands/brands.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactusComponent } from './contactus/contactus.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContactService } from './contact.service';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,7 @@ import { ContactusComponent } from './contactus/contactus.component';
     BrandsComponent,
     FooterComponent,
     ContactusComponent,
+    PageNotFoundComponent,
   ],
   
   imports: [
@@ -36,8 +41,9 @@ import { ContactusComponent } from './contactus/contactus.component';
     FormsModule,
     RouterModule,
     AppRoutingModule,
+    FontAwesomeModule,
   ],
-  providers: [],
+  providers: [ContactService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
