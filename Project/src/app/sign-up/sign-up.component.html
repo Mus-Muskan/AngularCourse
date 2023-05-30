@@ -1,0 +1,29 @@
+<div class="container">
+    <form #value="ngForm" (ngSubmit)="isValid(value)">
+        <h1 id="heading"> User Registeration</h1>
+        <pre></pre>
+        <pre></pre>
+        <div class="form-group">
+            <label for="username">Name</label>
+            <input required type="text" name="username" class="form-control" placeholder="Enter your Name..." ngModel>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="email">email</label>
+            <input required type="text" name="email" class="form-control" placeholder="name@example.com" ngModel>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="userId">UserId</label>
+            <input required type="text" name="userId" class="form-control" placeholder="name_64838!%$" ngModel>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input required minlength="8" type="password" name="password" class="form-control" ngModel>
+        </div>     
+        <pre></pre>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>

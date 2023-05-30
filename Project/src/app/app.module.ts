@@ -19,6 +19,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactService } from './contact.service';
 import { AuthService } from './auth.service';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { AuthService } from './auth.service';
     FooterComponent,
     ContactusComponent,
     PageNotFoundComponent,
+    SignUpComponent,
   ],
   
   imports: [
